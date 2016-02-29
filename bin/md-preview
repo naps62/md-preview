@@ -1,0 +1,9 @@
+#!/bin/sh
+
+TEMPFILE="/tmp/md-preview"
+HTMLFILE="/tmp/md-preview.html"
+TEMPLATEFILE="template.erb"
+
+markdown $1 > $TEMPFILE
+MD_PREVIEW_FILE=$TEMPFILE erb $TEMPLATEFILE > $HTMLFILE
+xdg-open $HTMLFILE
