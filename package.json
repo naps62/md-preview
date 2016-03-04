@@ -1,0 +1,8 @@
+{
+  "name": "nw-demo",
+  "main": "md-preview.html",
+  "dependencies": {
+    "electron": "^0.4.1",
+    "node-markdown": "^0.1.1"
+  }
+}
